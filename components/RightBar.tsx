@@ -9,8 +9,8 @@ export default function RightBar() {
     { id: 4, title: "#music", posts: 310 },
   ];
   return (
-    <div className="w-1/4 border-l border-gray-400 py-2 pl-2">
-      <div className="w-full flex flex-col gap-2 border border-gray-400 p-2">
+    <div className="w-1/4 border-l border-gray-400 py-2 pl-2 hidden lg:inline">
+      <div className="w-full flex flex-col gap-4 border border-gray-400 p-2">
         <p className="font-poppinsSemiBold">For you</p>
         {data.map(({ id, title, posts }) => (
           <div className="w-full flex justify-between items-center" key={id}>

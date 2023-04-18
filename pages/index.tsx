@@ -17,7 +17,7 @@ export default function Home({ posts }: IProps) {
       <Head>
         <title>apollo</title>
       </Head>
-      <div className="w-1/2 h-[88vh] p-2 flex flex-col gap-2 overflow-y-scroll no-scrollbar">
+      <div className="w-full lg:w-1/2 h-screen lg:h-[88vh] p-2 flex flex-col gap-2 overflow-y-scroll no-scrollbar mb-[10vh] lg:mb-0">
         {isSignedIn && <Wizard />}
         {posts?.map((post) => (
           <Post {...post} key={post?._id} />

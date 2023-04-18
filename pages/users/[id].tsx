@@ -17,7 +17,7 @@ export default function User({ posts }: IProps) {
       <Head>
         <title>apollo | {posts[0]?.username}</title>
       </Head>
-      <div className="w-1/2 p-2 flex flex-col gap-2 h-[88vh] overflow-y-scroll no-scrollbar">
+      <div className="w-full lg:w-1/2 p-2 flex flex-col gap-2 h-screen lg:h-[88vh] overflow-y-scroll no-scrollbar mb-[10vh] lg:mb-0">
         <div className="w-full border border-gray-400 flex items-center gap-2 p-2">
           <Image
             src={posts[0]?.avatar}

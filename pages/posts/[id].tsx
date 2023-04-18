@@ -58,7 +58,7 @@ export default function Post({ post, comments, likes }: IProps) {
       <Head>
         <title>apollo</title>
       </Head>
-      <div className="w-1/2 p-2 h-[88vh] overflow-y-scroll no-scrollbar flex flex-col gap-2">
+      <div className="w-full lg:w-1/2 p-2 h-screen lg:h-[88vh] overflow-y-scroll no-scrollbar flex flex-col gap-2 mb-[10vh] lg:mb-0">
         <div className="p-2 border border-gray-400 flex flex-col gap-2">
           <div className="w-full flex justify-between items-center">
             <Link href={`/users/${post?.userId}`}>

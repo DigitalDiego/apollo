@@ -8,7 +8,7 @@ export default function Navbar() {
   const { user, isSignedIn } = useUser();
 
   return (
-    <div className="w-full h-[12vh] border-b border-gray-400">
+    <div className="hidden lg:flex w-full h-[12vh] border-b border-gray-400">
       <div className="w-3/4 mx-auto flex h-full">
         <div className="w-1/4 flex justify-start items-center border-r border-gray-400">
           <Link className="font-lobster text-4xl" href="/">
